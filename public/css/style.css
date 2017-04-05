@@ -1,0 +1,42 @@
+body{
+    height: 100%;
+    background: whitesmoke;
+}
+.auto-margin{margin: auto;}
+.text-center{text-align: center;}
+md-toolbar .md-toolbar-tools{background: #375166;}
+.loginsubmitbtn .btn {
+    border: 2px solid #00afde;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+.loginbtn {
+    position: relative;
+    right: 40px;
+}
+.triggerlogin {
+    position: absolute;
+    top: -5px;
+    right: -35px;
+    border: 2px solid #00afde;
+    border-radius: 50%;
+}
+.btn-login {
+    background: #00afde;
+    border: 2px solid #00afde;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+.preview{padding: 10px 0;}
+.preview img{width: 200px;display: inline;}
+.title {
+    font-size: 16px;
+    padding: 10px;
+}
+.clientName{
+    padding: 25px;
+}

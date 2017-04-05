@@ -1,0 +1,79 @@
+
+<div ng-controller="HomeController"> 
+ <div class="container">
+      <md-toolbar class="header">
+    <div class="md-toolbar-tools">
+      <h2><img src="img/logo.png"></h2>
+      <span flex></span>
+        <p class="clientName">Hi, {{name}}</p>
+        <div class="signOutGreen" s-sign-out></div>
+      </div>
+    </md-toolbar>
+</div>
+  
+  <!--<p>Email : {{email}}</p>
+  <p>Profile Pic: </p><img ng-src="{{profileURL}}">-->
+  
+</div>
+  <div  ng-controller="LoginController">
+    <div layout="row" layout-padding ng-cloak>
+      <div flex="25"  layout-gt-md="column" >
+        <form name="addVideoForm" ng-submit="addVideo(addVideodata)"> 
+          <md-input-container class="md-block">
+            <label>Enter Youtube url/Video Id</label>
+            <input required md-no-asterisk name="url" ng-model="addVideodata.url" >
+            <div ng-messages="addVideoForm.url.$error">
+              <div ng-message="required">This is required.</div>
+            </div>
+          </md-input-container>
+          <md-input-container class="md-block">
+            <label>Enter start time in minutes</label>
+            <input  md-no-asterisk name="startTime" ng-model="addVideodata.startTime" >
+            <div ng-messages="addVideoForm.startTime.$error">
+              <div ng-message="required">This is required.</div>
+            </div>
+          </md-input-container>
+          <md-input-container class="md-block">
+            <label>Enter end time in minutes</label>
+            <input  md-no-asterisk name="endTime" ng-model="addVideodata.endTime" >
+            <div ng-messages="addVideoForm.endTime.$error">
+              <div ng-message="required">This is required.</div>
+            </div>
+          </md-input-container>
+          <md-button type="submit"  class="md-raised md-primary">Add video to your list</md-button>
+        </form>
+      </div>
+
+      <div flex="45" ng-controller="libCtrl">
+        <div ng-repeat="libdatas in libData">
+          <div ng-if="val==$index">
+            <h4>{{libdatas.name}}</h4>
+            <youtube  width="420" height="320" endTime="1800" videoid={{libdatas.video_id}}></youtube>
+          </div>
+            
+        </div>
+        <div ng-if="libData.length==0">
+          <h3>Video</h3>
+          <div >
+            <h4>Sorry, you dont have any videos in the list</h4>
+          </div>
+            
+        </div>
+      
+
+      </div>
+      <div flex="30" ng-controller="libCtrl" layout="column">
+        <h3>Play List</h3>
+        <div class="preview" ng-repeat="libdatas in libData"  layout="row" ng-click="currentVid($index)">
+          <img ng-src={{libdatas.image}}>
+          <span class="title">{{libdatas.name}}</span>
+        </div>
+                <div ng-if="libData.length==0">
+          <div >
+            <p>Add some videos from left panel</p>
+          </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>

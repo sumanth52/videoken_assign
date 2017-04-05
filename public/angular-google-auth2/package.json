@@ -1,0 +1,61 @@
+{
+  "name": "angular-google-auth2",
+  "version": "1.0.8",
+  "description": "This angular js directive plugin helps one to implement the google auth2 sign-in and sign-out features in web apps, mobile apps developed using angular js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sreeneshkini/angular-google-auth2.git"
+  },
+  "keywords": [
+    "mobile",
+    "web",
+    "directivejs",
+    "plugin",
+    "logout",
+    "login",
+    "signout",
+    "signin",
+    "google",
+    "auth",
+    "auth2",
+    "angular"
+  ],
+  "author": {
+    "name": "Sreenesh Ramesh Kini Bindu"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sreeneshkini/angular-google-auth2/issues"
+  },
+  "homepage": "https://github.com/sreeneshkini/angular-google-auth2#readme",
+  "gitHead": "16a5d556aea7e0f25358b2cc122fefff7713502c",
+  "_id": "angular-google-auth2@1.0.8",
+  "_shasum": "4d2ea7bef9d1ffc103c979e2c4ed07dfd02313e9",
+  "_from": "angular-google-auth2@latest",
+  "_npmVersion": "2.15.8",
+  "_nodeVersion": "4.4.7",
+  "_npmUser": {
+    "name": "sreeneshkini",
+    "email": "kinisreenesh202@gmail.com"
+  },
+  "dist": {
+    "shasum": "4d2ea7bef9d1ffc103c979e2c4ed07dfd02313e9",
+    "tarball": "https://registry.npmjs.org/angular-google-auth2/-/angular-google-auth2-1.0.8.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "sreeneshkini",
+      "email": "kinisreenesh202@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/angular-google-auth2-1.0.8.tgz_1467481365829_0.42430695216171443"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/angular-google-auth2/-/angular-google-auth2-1.0.8.tgz"
+}
